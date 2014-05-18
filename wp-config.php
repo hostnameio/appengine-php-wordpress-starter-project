@@ -21,20 +21,10 @@
     /** The name of the database for WordPress */
     define('DB_NAME', 'wordpress_db');
 
-    /** MySQL database username */
+    define('DB_HOST', ':/cloudsql/wptk123:wpcloud-sql');
+    // define('DB_HOST', '173.194.244.100');
     define('DB_USER', 'root');
-
-    if (isset($_SERVER['SERVER_SOFTWARE']) && strpos($_SERVER['SERVER_SOFTWARE'],'Google App Engine') !== false) {
-        /** Live environment Cloud SQL login and SITE_URL info */
-        define('DB_HOST', ':/cloudsql/wptk123:wordpress');
-        define('DB_USER', 'root');
-        define('DB_PASSWORD', 'avaya91706');
-    } else {
-        /** Local environment MySQL login info */
-        define('DB_HOST', '127.0.0.1');
-        define('DB_USER', 'root');
-        define('DB_PASSWORD', 'avaya91706');
-    }
+    define('DB_PASSWORD', 'Avaya91706!');
 
     // Determine HTTP or HTTPS, then set WP_SITEURL and WP_HOME
     if (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)
