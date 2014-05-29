@@ -21,10 +21,10 @@
     /** The name of the database for WordPress */
     define('DB_NAME', 'wordpress_db');
 
-    define('DB_HOST', ':/cloudsql/wptk123:wpcloud-sql');
+    define('DB_HOST', ':/cloudsql/wptk123:wpsql');
     // define('DB_HOST', '173.194.244.100');
     define('DB_USER', 'root');
-    define('DB_PASSWORD', 'Avaya91706!');
+    define('DB_PASSWORD', '123');
 
     // Determine HTTP or HTTPS, then set WP_SITEURL and WP_HOME
     if (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)
